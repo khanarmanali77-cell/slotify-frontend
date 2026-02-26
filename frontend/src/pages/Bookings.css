@@ -1,0 +1,111 @@
+.bookings-page {
+  padding: 40px;
+  color: white;
+}
+
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.booking-table th,
+.booking-table td {
+  padding: 15px;
+  text-align: left;
+}
+
+.booking-table th {
+  background: #0f172a;
+}
+
+.booking-table tr:nth-child(even) {
+  background: #273449;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.status.pending {
+  background: #facc15;
+  color: black;
+}
+
+.status.approved {
+  background: #22c55e;
+}
+
+.status.cancelled {
+  background: #ef4444;
+}
+
+button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button.approve {
+  background: #22c55e;
+  color: white;
+}
+
+button.cancel {
+  background: #ef4444;
+  color: white;
+}
+/* FILTER BUTTONS */
+
+.filters {
+  margin: 20px 0;
+}
+
+.filter-btn {
+  margin-right: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #334155;
+  color: white;
+  transition: 0.3s;
+}
+
+.filter-btn:hover {
+  background: #475569;
+}
+
+.filter-btn.active {
+  background: linear-gradient(90deg, #2563eb, #1e40af);
+}
+.add-form {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.add-form input {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+}
+
+.add-form button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

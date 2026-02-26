@@ -1,0 +1,12 @@
+.card {
+  padding: 25px;
+  border-radius: 18px;
+  color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}

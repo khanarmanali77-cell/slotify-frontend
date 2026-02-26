@@ -1,0 +1,51 @@
+.sidebar {
+  width: 80px;
+  background: #111;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+  transition: width 0.3s ease;
+}
+
+.sidebar.open {
+  width: 220px;
+}
+
+.logo {
+  margin: 20px 0;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #facc15;
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.toggle-btn:hover {
+  transform: rotate(90deg);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 12px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.sidebar li:hover {
+  background: #1f2937;
+  transform: translateX(6px);
+}
+
+.sidebar li.active {
+  background: linear-gradient(90deg, #2563eb, #1e40af);
+}

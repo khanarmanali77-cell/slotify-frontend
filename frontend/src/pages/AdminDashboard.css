@@ -1,0 +1,31 @@
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboard::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(59,130,246,0.3) 0%, transparent 70%);
+  top: -100px;
+  right: -100px;
+}
+
+.main {
+  flex: 1;
+  padding: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+}
